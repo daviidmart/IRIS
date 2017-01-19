@@ -1,0 +1,18 @@
+﻿---- CODIGOS SUCCESS ----
+
+1000 - Operación exitosa
+1001 - Operacion con cagargo realizada exitosamente
+1002 - Autenticacion exitosa
+
+---- CODIGOS ERROR ----
+
+4000 - Error desconocido
+4001 - La longitut del parametro es incorrecta
+4002 - Credenciales invalidas
+4003 - La IP desde la cual se realizo la solicitud no esta autorizada
+4004 - Permisos insuficientes
+4005 - Recursos insuficientes
+4006 - Error al crear usuario
+4007 - Nivel insuficiente
+4008 - El procedimiento solicitado no existe en la tabla [procedimientos]
+4006 - No hay puertos disponibles para enviar sms
