@@ -4,7 +4,7 @@ Descarga
 
 Instalar, desinstalar, iniciar y detener
 --------------------
-Una vez descargado el archivo y descomprimido abrimos la consola como administradores en el directorio del proyecto. Una vez echo esto podremos ejecutar cualquiera de los siguientes comandos.
+Una vez descargado el archivo y descomprimido abrimos la consola como administrador en el directorio donde ha sido puesto IRIS. Una vez echo esto podremos ejecutar cualquiera de los siguientes comandos.
 
 ````
 > IRIS install
