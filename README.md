@@ -1,7 +1,23 @@
-Instalacion
+Descarga
 --------------------
 [IRIS v0.3](https://github.com/facebook/react/wiki/Sites-Using-React)
 
+Instalar, desinstalar, iniciar y detener
+--------------------
+Una vez descargado el archivo y descomprimido abrimos la consola como administradores en el directorio del proyecto. Una vez echo esto podremos ejecutar cualquiera de los siguientes comandos.
+
+````
+> IRIS install
+````
+````
+> IRIS uninstall
+````
+````
+> IRIS start
+````
+````
+> IRIS stop
+````
 
 Niveles y permisos
 --------------------
