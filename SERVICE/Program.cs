@@ -9,9 +9,6 @@ namespace API
     {
         static void Main(string[] args)
         {
-            GSM gsm = new GSM();
-            new Timer(e => gsm.ServerStatus(), null, TimeSpan.Zero, TimeSpan.FromSeconds(30.0));
-
             HostFactory.Run(x => 
             {
                 x.Service<Webserver>(s => 

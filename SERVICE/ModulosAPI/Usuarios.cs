@@ -28,9 +28,9 @@ namespace API.ModulosAPI
                 string token = p.token;
                 try
                 {
-                    Dictionary<string, object> expr_E2 = JsonWebToken.DecodeToObject<Dictionary<string, object>>(token, secretKey, true);
-                    string text = expr_E2["user"].ToString();
-                    string text2 = expr_E2["pasw"].ToString();
+                    Dictionary<string, object> jsontoken = JsonWebToken.DecodeToObject<Dictionary<string, object>>(token, secretKey, true);
+                    string text = jsontoken["user"].ToString();
+                    string text2 = jsontoken["pasw"].ToString();
                     if (!new Comprobaciones().CheckCredentialsFormat(2, text, text2))
                     {
                         r = RES.Generar(0, 4001, "La longitud del usuario o la contraseña no es valida", false, 0f, 0f);
@@ -73,9 +73,9 @@ namespace API.ModulosAPI
                 string token = p.token;
                 try
                 {
-                    Dictionary<string, object> expr_C5 = JsonWebToken.DecodeToObject<Dictionary<string, object>>(token, secretKey, true);
-                    string text = expr_C5["user"].ToString();
-                    string text2 = expr_C5["pasw"].ToString();
+                    Dictionary<string, object> jsontoken = JsonWebToken.DecodeToObject<Dictionary<string, object>>(token, secretKey, true);
+                    string text = jsontoken["user"].ToString();
+                    string text2 = jsontoken["pasw"].ToString();
                     if (!new Comprobaciones().CheckCredentialsFormat(2, text, text2))
                     {
                         r = RES.Generar(0, 4001, "La longitud del usuario o la contraseña no es valida", false, 0f, 0f);

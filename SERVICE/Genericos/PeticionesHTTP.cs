@@ -19,27 +19,13 @@ namespace API.Genericos
             string str1 = (string)data["L"];
             string str2 = (string)data["U"];
             string str3 = DataSecurityManager.DecryptDESData((string)data["P"]);
-            string str4 = (string)data["CP"];
+            string from = (string)data["CP"];
             string numero = (string)body["to"];
             string mensaje = (string)body["text"];
             float price = (float)data["PRICE"];
             int cid = (int)data["CID"];
 
-            JObject jobject1 = JObject.Parse("{" +
-                @"type: 'send - sms', \r\n                
-                task_num: '1',\r\n                
-                sr_cnt: 1, \r\n                
-                tasks: [{ \r\n                    
-                    tid: " + (object)tid + "," +
-                    "from: '" + str4 + "',"+
-                    "to: '" + numero + "',"+
-                    "sms: '" + mensaje + "',"+
-                    "tmo: 15,"+
-                    "sdr: 0,"+
-                    "fdr: 0 ,"+
-                    "sr_cnt: 1"+
-                "}]"+
-            "}");
+            JObject jobject1 = JObject.Parse(string.Concat(new object[] { "{ \r\n type: 'send - sms', \r\n task_num: '1',\r\n sr_cnt: 1, \r\n tasks: [{ \r\n tid: ", tid, ", \r\n from: '", from, "', \r\n to: '", numero, "', \r\n sms: '", mensaje, "', \r\n tmo: 15, \r\n sdr: 0, \r\n fdr: 0 ,\r\n sr_cnt: 1\r\n }] \r\n }" }));
 
             JObject jobject2 = JObject.Parse((await (await httpClient.PostAsync(string.Format("{0}goip_post_sms.html?username=", (object)str1) + str2 + "&password=" + str3, (HttpContent)new StringContent(jobject1.ToString(), Encoding.UTF8, "application/json"))).Content.ReadAsStringAsync()).Replace("\"", "'"));
             db.InsertSMS(tid, cid, apik, price, mensaje, numero);

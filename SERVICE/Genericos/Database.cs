@@ -54,8 +54,8 @@ namespace API.Genericos
                     {
                         cmd = new SqlCommand(cmdText, dbc);
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add("@DATA", SqlDbType.VarChar, 0x186a0).Value = data.ToString();
-                        cmd.Parameters.Add("@RES", SqlDbType.VarChar, 0x3e8).Direction = ParameterDirection.Output;
+                        cmd.Parameters.Add("@DATA", SqlDbType.VarChar, 100000).Value = data.ToString();
+                        cmd.Parameters.Add("@RES", SqlDbType.VarChar, 1000).Direction = ParameterDirection.Output;
                         cmd.ExecuteNonQuery();
                         r = JObject.Parse(cmd.Parameters["@RES"].Value.ToString());
                     }
@@ -119,7 +119,7 @@ namespace API.Genericos
 
         public void UpdateSMS(int tid, string to)
         {
-            this.DBConect();
+            DBConect();
             try
             {
                 cmd = new SqlCommand(string.Format("UPDATE mensajes SET [status] = 1 WHERE tid = {0} AND [to] = '{1}' AND fecha >= DATEADD(day, -1, convert(date, GETDATE()))", tid, to), this.dbc);
