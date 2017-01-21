@@ -10,3 +10,4 @@ VALUES ('davidl','::1');
 
 SELECT * FROM usuarios
 SELECT * FROM firewall WHERE ip = '::1'
+SELECT * FROM servidores
