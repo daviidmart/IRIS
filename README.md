@@ -4,6 +4,8 @@ Descarga
 
 Instalar, desinstalar, iniciar y detener
 --------------------
+![alt tag]()
+
 Una vez descargado el archivo y descomprimido abrimos la consola como administrador en el directorio donde ha sido puesto IRIS. Una vez echo esto podremos ejecutar cualquiera de los siguientes comandos.
 
 Instalar servicio:
