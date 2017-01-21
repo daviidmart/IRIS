@@ -1,6 +1,6 @@
-Iniciar servicio
+Instalacion
 --------------------
-[Sites Using React](https://github.com/facebook/react/wiki/Sites-Using-React)
+[IRIS v0.3](https://github.com/facebook/react/wiki/Sites-Using-React)
 
 
 Niveles y permisos
