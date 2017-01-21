@@ -1,6 +1,6 @@
 Descarga
 --------------------
-[IRIS v0.3](https://github.com/facebook/react/wiki/Sites-Using-React)
+[IRIS v0.3](https://github.com/daviidmart/IRIS/raw/master/PRODUCTION/0.3.zip)
 
 Instalar, desinstalar, iniciar y detener
 --------------------
