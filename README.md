@@ -22,6 +22,8 @@ Detener servicio:
 ````
 > IRIS stop
 ````
+> **ACTUALIZAR** Para actualizar el servicio es necesario remover el servicio que ya se ha instalado con anterioridad despues instalar el nuevo e iniciarlo.
+
 
 Niveles y permisos
 --------------------
