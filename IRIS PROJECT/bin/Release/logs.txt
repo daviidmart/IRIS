@@ -1,9 +1,0 @@
-http://*:8083 - System.MissingMemberException: The server factory could not be located for the given input: Microsoft.Owin.Host.HttpListener
-   en Microsoft.Owin.Hosting.Engine.HostingEngine.ResolveServerFactory(StartContext context)
-   en Microsoft.Owin.Hosting.Engine.HostingEngine.Start(StartContext context)
-   en Microsoft.Owin.Hosting.Starter.DirectHostingStarter.Start(StartOptions options)
-   en Microsoft.Owin.Hosting.Starter.HostingStarter.Start(StartOptions options)
-   en Microsoft.Owin.Hosting.WebApp.StartImplementation(IServiceProvider services, StartOptions options)
-   en Microsoft.Owin.Hosting.WebApp.Start(StartOptions options)
-   en Microsoft.Owin.Hosting.WebApp.Start[TStartup](StartOptions options)
-   en API.Webserver.Start() en D:\IRIS\SERVICE\Webserver.cs:línea 19
