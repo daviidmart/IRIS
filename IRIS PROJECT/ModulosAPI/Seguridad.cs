@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace API.ModulosAPI
 {
-    class Seguridad : NancyModule
+    public class Seguridad : NancyModule
     {
         static string semilla = ConfigurationManager.AppSettings["semilla"];
         static string secretKey = ConfigurationManager.AppSettings["jwtsec"];
@@ -27,7 +27,7 @@ namespace API.ModulosAPI
                 {
                     string authu = p.user;
                     string authp = p.pasw;
-                    if (!new Comprobaciones().CheckCredentialsFormat(1, authu, authu))
+                    if (!new Comprobaciones().CheckCredentialsFormat(1, authu, authp))
                     {
                         r = RES.Generar(0, 4001, "La longitud del usuario o la contraseña no es valida", false, 0f, 0f);
                         statusCode = HttpStatusCode.BadRequest;
@@ -37,7 +37,7 @@ namespace API.ModulosAPI
                         Database database = new Database();
                         GetHttpStatus getHttpStatus = new GetHttpStatus();
                         TokenGenerator.Generate(25).ToUpper();
-                        JObject data = JObject.Parse("{ user: '"+ authu+ "', pasw: '"+ BCrypt.Net.BCrypt.HashPassword(authp, semilla)+ "' }");
+                        JObject data = JObject.Parse("{ user: '" + authu + "', pasw: '" + BCrypt.Net.BCrypt.HashPassword(authp, semilla) + "' }");
                         JObject jObject = database.EjecutarProc("AUTUS", data);
                         statusCode = getHttpStatus.ToHttpStatusCode((int)jObject["codigo"]);
                         var payload = new Dictionary<string, object>()

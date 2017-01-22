@@ -13,19 +13,13 @@ namespace API.Genericos
             p1 = p1.Trim();
             p2 = p2.Trim();
             bool result = true;
-            if (t == 0)
+            if (t == 0 && (p1.Length != 8 || p2.Length != 14))
             {
-                if (p1.Length != 8 || p2.Length != 14)
-                {
-                    result = false;
-                }
+                result = false;
             }
-            else if (t == 1)
+            else if (t == 1 && (p1.Length < 5 || p2.Length < 8))
             {
-                if (p1.Length < 5 || p1.Length > 10 || p2.Length < 8 || p2.Length > 15)
-                {
-                    result = false;
-                }
+                result = false;
             }
             else if (t == 2 && (p1.Length < 5 || p1.Length > 10 || p2.Length != 60))
             {

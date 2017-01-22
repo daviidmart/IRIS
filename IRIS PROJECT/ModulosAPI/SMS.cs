@@ -18,7 +18,7 @@ namespace API.ModulosAPI
         private Logs lg = new Logs();
         static string v = ConfigurationManager.AppSettings["version"];
 
-        public SMS() : base(v) //Asignamos la version de la api
+        public SMS() : base(v)
         {
             Post["/sms/{apikey}/{apisecret}", true] = async (x, ct) =>
             {

@@ -34,3 +34,45 @@ D:\IRIS\SERVICE\bin\Release\Serilog.xml
 D:\IRIS\SERVICE\bin\Release\Serilog.Sinks.Logentries.xml
 D:\IRIS\SERVICE\bin\Release\Serilog.Sinks.PeriodicBatching.xml
 D:\IRIS\SERVICE\bin\Release\DataSecurity.dll
+D:\IRIS\IRIS PROJECT\bin\Release\IRIS.exe.config
+D:\IRIS\IRIS PROJECT\bin\Release\IRIS.exe
+D:\IRIS\IRIS PROJECT\bin\Release\IRIS.pdb
+D:\IRIS\IRIS PROJECT\bin\Release\BCrypt.Net.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Calabonga.Utils.TokenGenerator.dll
+D:\IRIS\IRIS PROJECT\bin\Release\DataSecurity.dll
+D:\IRIS\IRIS PROJECT\bin\Release\JsonWebTokens.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.Host.HttpListener.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.Hosting.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.WindowsAzure.Configuration.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Nancy.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Nancy.Owin.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Newtonsoft.Json.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Owin.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.Sinks.Logentries.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.Sinks.PeriodicBatching.dll
+D:\IRIS\IRIS PROJECT\bin\Release\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\IRIS\IRIS PROJECT\bin\Release\Topshelf.dll
+D:\IRIS\IRIS PROJECT\bin\Release\BCrypt.Net.pdb
+D:\IRIS\IRIS PROJECT\bin\Release\BCrypt.Net.xml
+D:\IRIS\IRIS PROJECT\bin\Release\JsonWebTokens.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.Host.HttpListener.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.Owin.Hosting.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Microsoft.WindowsAzure.Configuration.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Nancy.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Nancy.Owin.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Newtonsoft.Json.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.Sinks.Logentries.xml
+D:\IRIS\IRIS PROJECT\bin\Release\Serilog.Sinks.PeriodicBatching.xml
+D:\IRIS\IRIS PROJECT\obj\Release\API.csprojResolveAssemblyReference.cache
+D:\IRIS\IRIS PROJECT\obj\Release\IRIS.exe
+D:\IRIS\IRIS PROJECT\obj\Release\IRIS.pdb
+D:\IRIS\PRODUCTION\BIN\IRIS.exe.config
+D:\IRIS\PRODUCTION\BIN\IRIS.exe
+D:\IRIS\PRODUCTION\BIN\IRIS.pdb
+D:\IRIS\PRODUCTION\IRIS\IRIS.exe.config
+D:\IRIS\PRODUCTION\IRIS\IRIS.exe
+D:\IRIS\PRODUCTION\IRIS\IRIS.pdb
