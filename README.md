@@ -1,12 +1,12 @@
 Descarga
 --------------------
-[IRIS v0.3](https://github.com/daviidmart/IRIS/raw/master/PRODUCTION/0.3.zip)
+[IRIS 0.3](https://github.com/daviidmart/IRIS/raw/master/PRODUCTION/0.3.zip)
 
 Instalar, desinstalar, iniciar y detener
 --------------------
 Una vez descargado el archivo y descomprimido abrimos la consola como administrador en el directorio donde ha sido puesto IRIS. Una vez echo esto podremos ejecutar cualquiera de los siguientes comandos.
 
-![alt tag](https://github.com/daviidmart/IRIS/blob/master/tutorial.gif)
+![alt tag](https://docs.google.com/uc?id=0B3_TYF-i34tZbExXdmdLc1JRQms)
 
 Instalar servicio:
 ````
