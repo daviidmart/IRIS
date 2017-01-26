@@ -3,31 +3,38 @@
 ### Descripción
 Libreria para iris con la cual podras enviar sms y comprobar numeros de celular en Mexico. No requiere ninguna libreria.
 
-### Incluir Iris en tu html
+### Incluir iris.js en tu html justo antes de cerrar el body
 
 ```hmtl
-<script src="Iris.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+    <script src="iris.js"></script>
+</body>
+</html>
 ```
 
+### Iniciar sesion
 
-### Instanciado
+Esta funcion recibe 5 parametros en el siguiente orden y del siguiente tipo:
+
+| PARAMETRO  |         TIPO            |
+|:----------:| :---------------------- |
+| usuario    | text  	               |
+| contraseña | text                    |
+| recordar   | bool		               |
+| success    | function                |
+| error      | function                |
 
 ```javascript
-var iris = new Iris("TU KEY","TU SECRET"); //REMPLAZAR CON TUS CREDENCIALES
-```
-
-### Enviar SMS
-
-```javascript
-iris.send({
-    to: '0000000000',               //NUMERO AL CUAL SE VA A ENVIAR EL SMS
-    text: 'Hola como estas?',       //TEXTO DEL SMS 160 CARACTERES
-    success: function(d){
-        console.log('Ok: ',d);      //RESPUESTA SI LA UTENTICACION ES CORRECTA Y EL SMS FUE ENVIADO
-    },
-    error: function(d){
-        console.log('Error: ',d);    //RESPUESTA SI LA AUTENTICACION ES INCORRECTA O EL SMS NO FUE ENVIADO
-    }
+iris.login('usurio','password',true,function(correcto){
+    console.log(correcto);
+},function(error){
+    console.log(error);
 });
 ```
 
