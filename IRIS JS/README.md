@@ -1,6 +1,8 @@
 # IRIS JS - V 1.0
 
-### Incluir iris.js en tu html justo antes de cerrar el body
+### Instalacion
+
+Incluir iris.js en tu html justo antes de cerrar el body como en el siguiente ejemplo:
 
 ```hmtl
 <!DOCTYPE html>
@@ -13,6 +15,18 @@
     <script src="iris.js"></script>
 </body>
 </html>
+```
+
+### Configurar
+
+Modificar los siguientes parametros en iris.js para que funcione de acuerdo a tu servidor.
+
+Ejempplo:
+```javascript
+var urlDefault = 'index.html';   //URL DEFAULT EJEMPLO login.html - login.php - etc
+var server = 'http://localhost'; //URL DEL SERVIDOR
+var puerto = 8083;               //PUERTO DEL SERVIDOR
+var version = 1;                 //VERSION DEL SERVIDOR
 ```
 
 ### Iniciar sesion
