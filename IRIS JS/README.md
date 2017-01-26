@@ -92,7 +92,7 @@ Esta funcion recibe 5 parametros en el siguiente orden y del siguiente tipo:
 
 Ejemplo:
 ```javascript
-iris.newUser('usurio','password', 99,true,function(correcto){
+iris.newUser('usurio','password', '99',true,function(correcto){
     console.log(correcto);
 },function(error){
     console.log(error);
