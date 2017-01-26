@@ -37,16 +37,51 @@ iris.login('usurio','password',true,function(correcto){
 ```
 > **RECORDAR** Por medio del parametro recordar especificamos si la session se va a mantener o se va a borrar al cerrar el navegador.
 
-### Comprobar numero
+### Cerrar session
 
-```javascript    
-iris.check({
-    number: '0000000000',           //NUMERO A COMPROBAR EN TIPO STRING
-    success: function(d){
-        console.log('Ok: ',d);      //RESPUESTA SI LA UTENTICACION ES CORRECTA Y EL NUMERO ES VALIDO
-    },
-    error: function(d){
-        console.log('Error: ',d);   //RESPUESTA SI LA AUTENTICACION ES INCORRECTA O EL NUMERO ES INVALIDO
-    }
+Esta funcion no recibe ningun parametro y al finalizar automaticamente redirige a la pagina default
+
+Ejempplo:
+```javascript
+iris.logout();
+```
+
+### Obtener datos de usuario
+
+Esta funcion recibe 2 parametros en el siguiente orden y del siguiente tipo:
+
+| PARAMETRO  |         TIPO            |
+|:----------:| :---------------------- |
+| success    | function                |
+| error      | function                |
+
+Ejempplo:
+```javascript
+iris.getUser(function(correcto){
+    console.log(correcto);
+},function(error){
+    console.log(error);
+});
+```
+
+### Enviar sms
+
+Esta funcion recibe 6 parametros en el siguiente orden y del siguiente tipo:
+
+| PARAMETRO  |         TIPO            |
+|:----------:| :---------------------- |
+| apikey     | text                    |
+| apiSecret  | text                    |
+| para       | text                    |
+| texto      | text                    |
+| success    | function                |
+| error      | function                |
+
+Ejempplo:
+```javascript
+iris.sendSms(apik,apis,para,texto,function(correcto){
+    console.log(correcto);
+},function(error){
+    console.log(error);
 });
 ```
