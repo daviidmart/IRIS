@@ -35,6 +35,7 @@ iris.login('usurio','password',true,function(correcto){
     console.log(error);
 });
 ```
+> **RECORDAR** Por medio del parametro recordar especificamos si la session se va a mantener o se va a borrar al cerrar el navegador.
 
 ### Comprobar numero
 
