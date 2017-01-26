@@ -1,8 +1,5 @@
 # IRIS JS - V 1.0
 
-### Descripción
-Libreria para iris con la cual podras enviar sms y comprobar numeros de celular en Mexico. No requiere ninguna libreria.
-
 ### Incluir iris.js en tu html justo antes de cerrar el body
 
 ```hmtl
@@ -30,6 +27,7 @@ Esta funcion recibe 5 parametros en el siguiente orden y del siguiente tipo:
 | success    | function                |
 | error      | function                |
 
+Ejempplo:
 ```javascript
 iris.login('usurio','password',true,function(correcto){
     console.log(correcto);
