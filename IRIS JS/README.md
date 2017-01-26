@@ -79,7 +79,7 @@ Esta funcion recibe 6 parametros en el siguiente orden y del siguiente tipo:
 
 Ejempplo:
 ```javascript
-iris.sendSms(apik,apis,para,texto,function(correcto){
+iris.sendSms('KJAHSD1312','ASDJKHHG1238172','4491259348','Hola como estas',function(correcto){
     console.log(correcto);
 },function(error){
     console.log(error);
