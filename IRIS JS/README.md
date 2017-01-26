@@ -41,7 +41,7 @@ Esta funcion recibe 5 parametros en el siguiente orden y del siguiente tipo:
 | success    | function                |
 | error      | function                |
 
-Ejempplo:
+Ejemplo:
 ```javascript
 iris.login('usurio','password',true,function(correcto){
     console.log(correcto);
@@ -55,7 +55,7 @@ iris.login('usurio','password',true,function(correcto){
 
 Esta funcion no recibe ningun parametro y al finalizar automaticamente redirige a la pagina default
 
-Ejempplo:
+Ejemplo:
 ```javascript
 iris.logout();
 ```
@@ -78,6 +78,27 @@ iris.getUser(function(correcto){
 });
 ```
 
+### Crear nuevo usuario
+
+Esta funcion recibe 5 parametros en el siguiente orden y del siguiente tipo:
+
+| PARAMETRO  |         TIPO            |
+|:----------:| :---------------------- |
+| usuario    | text  	               |
+| contraseña | text                    |
+| nivel      | text  	               |
+| success    | function                |
+| error      | function                |
+
+Ejemplo:
+```javascript
+iris.newUser('usurio','password', 99,true,function(correcto){
+    console.log(correcto);
+},function(error){
+    console.log(error);
+});
+```
+
 ### Enviar sms
 
 Esta funcion recibe 6 parametros en el siguiente orden y del siguiente tipo:
@@ -91,7 +112,7 @@ Esta funcion recibe 6 parametros en el siguiente orden y del siguiente tipo:
 | success    | function                |
 | error      | function                |
 
-Ejempplo:
+Ejemplo:
 ```javascript
 iris.sendSms('KJAHSD1312','ASDJKHHG1238172','4491259348','Hola como estas',function(correcto){
     console.log(correcto);
