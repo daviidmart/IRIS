@@ -62,7 +62,7 @@ namespace API.ModulosAPI
                     r = RES.Generar(0, 4000, "Error desconocido", false, 0.0f, 0.0f);
                     lg.Nuevo(3, "SMS/POST", e.ToString());
                 }
-                return Negotiate.WithStatusCode(HTTPStat).WithContentType("application/json").WithModel(r);
+                return Negotiate.WithStatusCode(HTTPStat).WithContentType("application/json").WithModel(r).WithHeader("Access-Control-Allow-Origin", "*").WithHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE").WithHeader("Access-Control-Allow-Headers", "Accept, Origin, Content-type"); ;
             };
         }
     }

@@ -62,7 +62,7 @@ namespace API.ModulosAPI
                         lg.Nuevo(3, "SMS/POST", e.ToString());
                     }
                 }
-                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r);
+                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r).WithHeader("Access-Control-Allow-Origin", "*").WithHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE").WithHeader("Access-Control-Allow-Headers", "Accept, Origin, Content-type");
             };
 
             Get["/user/{token}"] = p =>
@@ -127,7 +127,7 @@ namespace API.ModulosAPI
                         lg.Nuevo(3, "USURIOS/GET", e.ToString());
                     }
                 }
-                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r);
+                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r).WithHeader("Access-Control-Allow-Origin", "*").WithHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE").WithHeader("Access-Control-Allow-Headers", "Accept, Origin, Content-type"); ;
             };
         }
     }

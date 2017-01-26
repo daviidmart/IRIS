@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #34495e;
+}
+
+input {
+    width: 20vw;
+    height: 2vw;
+    border: none;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 89vw;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0.5vw;
+}
+
+#login-block {
+    width: 100vw;
+    height: 10vw;
+    background: #2c3e50;
+    position: relative;
+}
+
+#mensaje-block {
+    width: 100vw;
+    height: 16vw;
+    background: #2c3e50;
+    position: relative;
+}
+
+#nuevo-block{
+    width: 100vw;
+    height: 13vw;
+    background: #2c3e50;
+    position: relative;
+}
+
+#user-block {
+    width: 100vw;
+    height: 3vw;
+    background: #34495e;
+    position: relative;
+    display: none;
+}
+
+.log {
+    position: absolute;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 3px;
+    top: 0;
+    right: 0;
+    height: 8vw;
+    width: 77vw;
+    background: #fff;
+    color: #2c3e50;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.boton {
+    width: 20vw;
+    height: 2vw;
+    border: none;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 89vw;
+    border-radius: 3px;
+    background: #2ecc71;
+    line-height: 2vw;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton2 {
+    width: 20vw;
+    height: 2vw;
+    border: none;
+    margin-top: 1vw;
+    margin-left: 1vw;
+    margin-right: 89vw;
+    border-radius: 3px;
+    background: #e74c3c;
+    line-height: 2vw;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.boton:active {
+    background: #fff;
+    color: #2ecc71;
+}
+
+#uname {
+    position: absolute;
+    top: 0;
+    right: 22vw;
+    width: 20vw;
+    height: 2vw;
+    border-radius: 3px;
+    background: #fff;
+    line-height: 2vw;
+    text-align: center;
+    color: #2c3e50;
+}
+
+#saldo {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    width: 20vw;
+    height: 2vw;
+    border-radius: 3px;
+    background: #fff;
+    line-height: 2vw;
+    text-align: center;
+    color: #2c3e50;
+}

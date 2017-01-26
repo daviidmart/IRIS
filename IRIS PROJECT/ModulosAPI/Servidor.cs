@@ -100,7 +100,7 @@ namespace API.ModulosAPI
                     r = RES.Generar(0, 4000, "Error desconocido", false);
                     lg.Nuevo(3, "Servidor/POST", e.ToString());
                 }
-                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r);
+                return Negotiate.WithStatusCode(statusCode).WithContentType("application/json").WithModel(r).WithHeader("Access-Control-Allow-Origin", "*").WithHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE").WithHeader("Access-Control-Allow-Headers", "Accept, Origin, Content-type");
             };
 
             Post["/gsmr/"] = p =>
@@ -108,7 +108,7 @@ namespace API.ModulosAPI
                 Database database = new Database();
                 try
                 {
-                    Console.WriteLine(base.Context.Request.Body.ReadAsString());
+                    Console.WriteLine(Context.Request.Body.ReadAsString());
                     JObject expr_3A = JObject.Parse(base.Context.Request.Body.ReadAsString());
                     bool flag = (bool)expr_3A["rpts"][0]["sent"];
                     int tid = (int)expr_3A["rpts"][0]["tid"];
@@ -125,7 +125,7 @@ namespace API.ModulosAPI
                     File.AppendAllText("errores.txt", text + Environment.NewLine);
                     Console.WriteLine(text);
                 }
-                return Negotiate.WithStatusCode(HttpStatusCode.Accepted).WithContentType("application/json").WithModel("{ status: true}");
+                return Negotiate.WithStatusCode(HttpStatusCode.Accepted).WithContentType("application/json").WithModel("{ status: true}").WithHeader("Access-Control-Allow-Origin", "*").WithHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE").WithHeader("Access-Control-Allow-Headers", "Accept, Origin, Content-type"); ;
             };
         }
     }
